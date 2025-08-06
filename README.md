@@ -55,9 +55,9 @@ pip install -r requirements.txt
 ```bash
 python main.py \
 --data Bike1NYC \
---root_path ./data/ \
 --data_path Bike1NYC.csv \
 --seq_len 12 --label_len 0 --pred_len 12 \
+--l 16  --w 8 \
 --train_epochs 15
 ```
 
@@ -74,7 +74,6 @@ python main.py \
 | `--e_layers` | 编码器层数 |
 | `--dropout` | Dropout 比例 |
 | `--use_gpu` | 是否使用 GPU |
-| `--do_predict` | 是否进行未来预测 |
 
 ---
 
